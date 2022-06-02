@@ -46,6 +46,7 @@ public class Programa {
 				String formato = "%-20s | %-20s | %-40s | %4s\n";
 				pw.printf(formato, "Nombre", "Especie", "Raza", "Edad");
 				pw.println("-".repeat(93));
+				
 				for (Mascota mascota : mascotas) {
 					pw.printf(formato, mascota.getNombre(), mascota.getEspecie(), mascota.getRaza(), mascota.getEdad());
 				}
